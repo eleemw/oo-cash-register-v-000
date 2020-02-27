@@ -15,7 +15,6 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
-    binding.pry
     @items.fill(@title, @items.size, @quantity)
     self.total += (@price * @quantity)
     @line_items << self
