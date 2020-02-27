@@ -1,8 +1,8 @@
 # cash_register.rb
 require "pry"
 class CashRegister
-  attr_accessor :total, :discount, :price, :quantity
-  attr_reader :title
+  attr_accessor :discount, :price, :quantity
+  attr_reader :title, :total
 
   def initialize(discount = 0)   #employee discount on initialization optional
     @total = 0
