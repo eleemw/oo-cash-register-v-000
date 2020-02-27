@@ -1,5 +1,5 @@
 # cash_register.rb
-require "Pry"
+require "pry"
 class CashRegister
   attr_accessor :total, :discount, :price, :quantity
   attr_reader :title
