@@ -8,7 +8,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []                  # stores all titles instance of cash_register
-    @transactions = []           # stores all transactions cash_register
+    @line_items = []           # stores all transactions cash_register
   end
 
   def add_item(title, price, quantity = 1)
@@ -18,7 +18,7 @@ class CashRegister
     binding.pry
     @items.fill(@title, @items.size, @quantity)
     self.total += (@price * @quantity)
-    @transactions << self
+    @line_items << self
   end
 
   def apply_discount              # applies the discount to the total price
