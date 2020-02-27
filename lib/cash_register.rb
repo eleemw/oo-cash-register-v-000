@@ -1,5 +1,5 @@
 # cash_register.rb
-
+require "Pry"
 class CashRegister
   attr_accessor :total, :discount, :price, :quantity
   attr_reader :title
@@ -15,7 +15,7 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
-
+    binding.pry
     @items.fill(@title, @items.size, @quantity)
     self.total += (@price * @quantity)
     @transactions << self
